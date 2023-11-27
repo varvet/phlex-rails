@@ -14,4 +14,10 @@ RSpec.describe "Layouts", type: :request do
 
 		expect(response.body).to eq %(<!DOCTYPE html><html><head><title>Article</title></head><body><main>\n<h1>Article</h1>\n</main></body></html>)
 	end
+
+	it "supports rendering templates" do
+		get "/articles/preview"
+
+		expect(response.body).to eq %(<!DOCTYPE html><html><head><title>Article</title></head><body><main>\n<h1>Article</h1>\n</main></body></html>)
+	end
 end

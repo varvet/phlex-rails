@@ -9,4 +9,5 @@ Rails.application.routes.draw do
 
 	get "articles/index", to: "articles#index"
 	get "articles/show", to: "articles#show"
+	get "articles/preview", to: "articles#preview"
 end

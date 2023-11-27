@@ -8,4 +8,8 @@ class ArticlesController < ActionController::Base
 	end
 
 	def show; end
+
+	def preview
+		render Articles::PreviewView
+	end
 end
